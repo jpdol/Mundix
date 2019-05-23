@@ -35,3 +35,27 @@ para criar um script de comandos, basta escrevê-los em um editor e salvar com a
 scp 
     transferir arquivos pelo terminal local: scp <my_file_path> pi@<ip_pi>:<remote_path>
     transferir diretório pelo terminal local: scp -r <my_dir_path> pi@<ip_pi>:<remote_dir>
+
+Listar serviços:
+    service --status-all
+
+Monitoramento de Serviços (possível controlar prioridades e encerrar processos):
+    htop
+
+Verificar status de um servico:
+    service <service_name> status
+
+Diretório de Serviços:
+    /etc/init.d
+
+Listar espaço total e utilizado de partições:
+    df -h
+    parted -l
+    sfdisk -l
+
+Listar pacotes:
+    dpkg --get-selections
+    dpkg-query -l '*' | less
+
+
+    rcconf

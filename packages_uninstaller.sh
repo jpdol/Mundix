@@ -1,3 +1,4 @@
+sudo apt-get -y autoremove python
 sudo apt-get -y autoremove lxde-common
 sudo apt-get -y autoremove hicolor-icon-theme
 sudo apt-get -y autoremove galculator
@@ -35,3 +36,4 @@ sudo rm -rf /usr/share/kde4
 sudo rm -rf /usr/share/images/*
 sudo apt-get -y autoremove
 sudo apt-get -y clean
+
