@@ -1,0 +1,37 @@
+para conectar no raspberry
+    ssh pi@IP   
+    IP == 192.168.0.124 (na rede LAC)
+       == 192.168.43.147 (na rede Only One)
+
+para se desconectar
+    exit
+
+verificar status do ssh
+    sudo systemctl status ssh.service
+    sudo service ssh status
+
+encontrar endereço IP
+    hostname -I
+
+iniciar servico ssh
+    sudo systemctl start ssh.service
+
+parar o servico ssh
+    sudo systemctl stop ssh.service
+
+terminar o servico ssh
+    sudo systemctl xxx ssh.service
+
+instalar ssh
+    sudo apt-get install ssh
+
+para criar um script de comandos, basta escrevê-los em um editor e salvar com a extensão .sh
+    detalhe: deve-se torná-lo executável
+    chmod +x script.sh
+    após dar permissão de execução
+        sudo ln -s /full/path/to/your/file /usr/local/bin/name_of_new_command
+    esse comando permite rodar scripts sem precisar digitar o caminho todo
+
+scp 
+    transferir arquivos pelo terminal local: scp <my_file_path> pi@<ip_pi>:<remote_path>
+    transferir diretório pelo terminal local: scp -r <my_dir_path> pi@<ip_pi>:<remote_dir>
