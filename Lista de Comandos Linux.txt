@@ -1,38 +1,38 @@
-para conectar no raspberry
+Conectar no Raspberry:
     ssh pi@IP   
     IP == 192.168.0.124 (na rede LAC)
        == 192.168.43.147 (na rede Only One)
 
-para se desconectar
+Desconectar do Raspberry:
     exit
 
-verificar status do ssh
+Verificar status do ssh
     sudo systemctl status ssh.service
     sudo service ssh status
 
-encontrar endereço IP
+Encontrar endereço IP
     hostname -I
 
-iniciar servico ssh
+Iniciar servico ssh
     sudo systemctl start ssh.service
 
-parar o servico ssh
+Parar o servico ssh
     sudo systemctl stop ssh.service
 
-terminar o servico ssh
+Terminar o servico ssh
     sudo systemctl xxx ssh.service
 
-instalar ssh
+Instalar ssh
     sudo apt-get install ssh
 
-para criar um script de comandos, basta escrevê-los em um editor e salvar com a extensão .sh
+Criar um script de comandos, basta escrevê-los em um editor e salvar com a extensão .sh
     detalhe: deve-se torná-lo executável
     chmod +x script.sh
     após dar permissão de execução
         sudo ln -s /full/path/to/your/file /usr/local/bin/name_of_new_command
     esse comando permite rodar scripts sem precisar digitar o caminho todo
 
-scp 
+Trasnferencia de dados scp:
     transferir arquivos pelo terminal local: scp <my_file_path> pi@<ip_pi>:<remote_path>
     transferir diretório pelo terminal local: scp -r <my_dir_path> pi@<ip_pi>:<remote_dir>
 
@@ -57,5 +57,16 @@ Listar pacotes:
     dpkg --get-selections
     dpkg-query -l '*' | less
 
+Ver e listar o tamanho de todos os arquivos dentro do diretório ou subdiretório(s):
+    du -ha <file_or_diretory>
 
-    rcconf
+Ver o tamanho de um arquivo ou diretório sem listar:
+    du -hs <file_or_diretory>
+
+
+
+
+
+
+
+
