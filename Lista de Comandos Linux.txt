@@ -63,10 +63,13 @@ Ver e listar o tamanho de todos os arquivos dentro do diretório ou subdiretóri
 Ver o tamanho de um arquivo ou diretório sem listar:
     du -hs <file_or_diretory>
 
-
-
-
-
-
-
-
+Instalar pacote de benchmark:
+    sudo apt-get install sysbench
+    
+Execução de Benchmark:
+    CPU:
+        sysbench --test=cpu run
+    Memory:
+        sysbench --test=memory run
+    I/O:
+        sysbench --test=fileio --file-test-mode=seqwr run
