@@ -1,0 +1,29 @@
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 16Mb each
+2Gb total file size
+Block size 16Kb
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing sequential write (creation) test
+Threads started!
+Done.
+
+Operations performed:  0 Read, 131072 Write, 128 Other = 131200 Total
+Read 0b  Written 2Gb  Total transferred 2Gb  (9.2475Mb/sec)
+  591.84 Requests/sec executed
+
+Test execution summary:
+    total time:                          221.4661s
+    total number of events:              131072
+    total time taken by event execution: 207.4177
+    per-request statistics:
+         min:                                  0.04ms
+         avg:                                  1.58ms
+         max:                               9929.07ms
+         approx.  95 percentile:               1.16ms
