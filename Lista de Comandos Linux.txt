@@ -2,6 +2,7 @@ Conectar no Raspberry:
     ssh pi@IP   
     IP == 192.168.0.124 (na rede LAC)
        == 192.168.43.147 (na rede Only One)
+       == 10.0.0.144 (na rede LAIC)
 
 Desconectar do Raspberry:
     exit
